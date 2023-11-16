@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body,
 html {
   max-width: 1400px;
@@ -92,21 +93,21 @@ html main .container .row .section1 .content1 .row .card .card-body .cardimg1 {
 }
 body main .container .row .section1 .content1 .row .card .card-body .cardimg2,
 html main .container .row .section1 .content1 .row .card .card-body .cardimg2 {
-  background-image: url(../images/fruit2.jpg);
+  background-image: url(../images/dirver2.png);
   background-position: center center;
   background-size: cover;
   height: 100px;
 }
 body main .container .row .section1 .content1 .row .card .card-body .cardimg3,
 html main .container .row .section1 .content1 .row .card .card-body .cardimg3 {
-  background-image: url(../images/fruit2.jpg);
+  background-image: url(../images/fruit5.jpg);
   background-position: center center;
   background-size: cover;
   height: 100px;
 }
 body main .container .row .section1 .content1 .row .card .card-body .cardimg4,
 html main .container .row .section1 .content1 .row .card .card-body .cardimg4 {
-  background-image: url(../images/fruit2.jpg);
+  background-image: url(../images/premium.avif);
   background-position: center center;
   background-size: cover;
   height: 100px;
@@ -363,14 +364,94 @@ html .main2 .container .row .section1 .col-6 .row .part2 .timeline::before {
   left: 50%;
   transform: translateX(-50%);
 }
+body .main2 .container .row .section1 .col-6 .row .part2 .timeline .timetext1,
+html .main2 .container .row .section1 .col-6 .row .part2 .timeline .timetext1 {
+  position: relative;
+}
+body .main2 .container .row .section1 .col-6 .row .part2 .timeline .timetext1::after,
+html .main2 .container .row .section1 .col-6 .row .part2 .timeline .timetext1::after {
+  position: absolute;
+  content: "發芽期";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bolder;
+  background-color: #3c3c3c;
+  color: wheat;
+  padding-right: 3px;
+  padding-left: 3px;
+  border-radius: 5px;
+}
 body .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12,
 html .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 {
-  min-height: 19.5vw;
+  align-items: center;
+  font-size: 1.25rem;
 }
-body .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .rightbox,
-html .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .rightbox {
-  background-color: #d4d11c;
-  min-height: 19.5vw;
+body .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .img1,
+html .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .img1 {
+  min-height: 10vw;
+  min-width: 2vw;
+  background-image: url(../百香果生長圖片/修過/1.png);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+}
+body .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .text1,
+html .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .text1 {
+  color: rgb(0, 0, 0);
+  padding: 20px 20px;
+  font-weight: 500;
+}
+body .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .img2,
+html .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .img2 {
+  min-height: 10vw;
+  min-width: 2vw;
+  background-image: url(../百香果生長圖片/2.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10%;
+}
+body .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .text2,
+html .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .text2 {
+  color: white;
+  padding: 20px 20px;
+  font-weight: 500;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  border-radius: 10% 0 0 10%;
+  min-height: 10vw;
+}
+body .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .img3,
+html .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .img3 {
+  min-height: 10vw;
+  min-width: 2vw;
+  background-image: url(../百香果生長圖片/3.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+}
+body .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .text3,
+html .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .text3 {
+  color: rgb(0, 0, 0);
+  padding: 20px 20px;
+  font-weight: 500;
+}
+body .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .img4,
+html .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .img4 {
+  min-height: 10vw;
+  min-width: 2vw;
+  background-image: url(../百香果生長圖片/4.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  border-radius: 10%;
+}
+body .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .text4,
+html .main2 .container .row .section1 .col-6 .row .part2 .timeline .col-12 .text4 {
+  color: white;
+  padding: 20px 20px;
+  font-weight: 500;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  border-radius: 10% 0 0 10%;
+  min-height: 10vw;
 }
 body .footer,
 html .footer {
