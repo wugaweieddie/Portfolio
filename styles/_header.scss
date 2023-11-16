@@ -1,0 +1,45 @@
+ // 選單列
+ header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    nav {
+
+        .logo {
+            .navbar-brand {
+
+                // 左邊LOGO大小
+                img {
+                    width: 8vw;
+                }
+
+                .logotext {
+                    display: none;
+                }
+            }
+
+            .collapse {
+                .navbar-nav {
+                    a {
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                        color: var(--mycolor7);
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 照片輪播
+.carousel {
+    .carousel-inner {
+        .carousel-item {
+            img {
+                height: 100vh;
+            }
+        }
+    }
+}

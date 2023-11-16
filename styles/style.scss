@@ -1,0 +1,492 @@
+body,
+html {
+    max-width: 1400px;
+    margin: 0 auto;
+    @import "./header";
+
+
+    // 回最上層按鈕
+    .toTop-arrow {
+        img {
+            width: 10rem;
+            height: 10rem;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            cursor: pointer;
+            position: fixed;
+            right: -1rem;
+            bottom: 1rem;
+            z-index: 99;
+
+        }
+
+        &.hide {
+            transform: translateX(120%);
+        }
+    }
+
+    // 首頁的main
+    main {
+        min-height: 85vw;
+        background-image: url(../images/bg-1.jpg);
+        background-position: center center;
+        background-size: cover;
+
+        // 首頁主要區
+        .container {
+            .row {
+                .section1 {
+                    margin-top: 30px;
+
+                    // 首頁左邊欄位
+                    .content1 {
+                        min-height: 40vw;
+                        background: linear-gradient(330deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+                        border-radius: 10%;
+                        padding-bottom: 10px;
+
+                        .contitle {
+                            margin-top: 10px;
+
+                            h4 {
+                                color: rgb(255, 255, 255);
+                                text-align: center;
+                                font-weight: bolder;
+                                font-size: 2rem;
+                            }
+                        }
+
+                        .row {
+
+                            // min-height: 40vw;
+                            .card {
+                                box-shadow: 5px 5px 5px #ebeb61;
+
+                                .card-body {
+                                    cursor: pointer;
+                                    box-shadow: 0px 3px 5px #3c3c3c;
+
+                                    .cardimg1 {
+                                        background-image: url(../images/fruit2.jpg);
+                                        background-position: center center;
+                                        background-size: cover;
+                                        height: 100px;
+                                    }
+
+                                    .cardimg2 {
+                                        background-image: url(../images/fruit2.jpg);
+                                        background-position: center center;
+                                        background-size: cover;
+                                        height: 100px;
+                                    }
+
+                                    .cardimg3 {
+                                        background-image: url(../images/fruit2.jpg);
+                                        background-position: center center;
+                                        background-size: cover;
+                                        height: 100px;
+                                    }
+
+                                    .cardimg4 {
+                                        background-image: url(../images/fruit2.jpg);
+                                        background-position: center center;
+                                        background-size: cover;
+                                        height: 100px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // 首頁右邊欄位
+                    .content2 {
+                        min-height: 40vw;
+                        background: linear-gradient(135deg, rgba(207, 116, 11, 0.2), rgba(221, 165, 10, 0.7));
+                        border-radius: 10%;
+                        padding-bottom: 10px;
+
+                        .contitle {
+                            margin-top: 10px;
+
+                            h4 {
+                                color: black;
+                                text-align: center;
+                                font-weight: bolder;
+                                font-size: 2rem;
+                            }
+                        }
+
+                        .col-10 {
+                            min-height: 300;
+                            // border: 1px solid red;
+                            margin: 20px auto;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+
+                            .conright1 {
+                                min-height: 15vw;
+                                border-radius: 10%;
+                                display: flex;
+                                justify-content: space-around;
+
+                                .context1 {
+                                    max-width: 50%;
+                                    display: flex;
+                                    align-items: center;
+
+                                    p {
+                                        padding: 10px;
+                                        font-weight: bolder;
+                                        font-size: 1.5rem;
+                                        color: var(--mycolor4);
+                                    }
+                                }
+
+                                .pimg {
+                                    border-radius: 10%;
+                                    min-height: 300px;
+                                    width: 400px;
+                                    min-width: 80px;
+                                    overflow: hidden;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    // border: 5px solid white;
+
+                                    img {
+                                        min-height: 300px;
+                                        width: 400px;
+                                        min-width: 80px;
+                                        transition: all 0.8;
+                                        border: 5px solid white;
+                                        border-radius: 10%;
+
+
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
+                            }
+
+                            .conright2 {
+                                min-height: 15vw;
+                                border-radius: 10%;
+                                display: flex;
+                                flex-direction: row-reverse;
+                                justify-content: space-around;
+
+
+                                .context2 {
+                                    max-width: 50%;
+                                    display: flex;
+                                    align-items: center;
+
+                                    p {
+                                        padding: 10px;
+                                        font-weight: bolder;
+                                        font-size: 1.2rem;
+                                        color: var(--mycolor9);
+                                    }
+                                }
+
+                                .pimg {
+                                    border-radius: 10%;
+                                    min-height: 300px;
+                                    width: 400px;
+                                    min-width: 80px;
+                                    overflow: hidden;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    // border: 5px solid white;
+
+                                    img {
+                                        min-height: 300px;
+                                        width: 400px;
+                                        min-width: 80px;
+                                        transition: all 0.8;
+                                        border: 5px solid white;
+                                        border-radius: 10%;
+
+
+                                        &:hover {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 下面第二塊內容
+            .bottompar {
+
+                // 左邊的內容
+                .section2 {
+                    min-height: 40vw;
+                    // border: 1px solid red;
+
+                    .par2leftimg {
+                        min-height: 20vw;
+                        background-image: url(../images/fruit4.jpg);
+                        opacity: 0.7;
+                        background-position: center center;
+                        background-size: cover;
+                        border-radius: 20%;
+                    }
+
+                    .par2leftbottom {
+                        background: linear-gradient(180deg, rgba(30, 212, 173, 0.2), rgba(206, 194, 194, 0.7)), url(../images/bottombg.jpg);
+                        background-position: center center;
+                        background-size: cover;
+                        min-height: 20vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        border-radius: 10px 10px 0 0;
+
+                        .title {
+                            text-align: center;
+                            color: var(--mycolor9);
+                            font-weight: bold;
+                            font-size: 2rem;
+                        }
+
+                        .icon {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            align-items: end;
+                            margin-bottom: 10px;
+                            // border: 1px solid red;
+
+                            img {
+                                width: 4vw;
+                                cursor: pointer;
+
+                                &:hover {
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+                // 右邊的內容
+                .bottomtextr {
+                    .col-12 {
+                        min-height: 9vw;
+                        background: linear-gradient(to bottom, rgba(206, 209, 40, 0.3), rgba(226, 11, 11, 0.7));
+                        border-radius: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        p {
+                            color: white;
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            padding: 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 關於的main
+    .main2 {
+        background-image: url(../images/big.jpg);
+        min-height: 100vw;
+        background-position: center center;
+        background-size: cover;
+
+        .container {
+            .row {
+
+                .section1 {
+                    display: flex;
+                    flex-direction: row;
+
+                    .col-6 {
+                        min-height: 100vw;
+
+                        .title {
+                            h2 {
+                                text-align: center;
+                                color: var(--mycolor12);
+                                font-size: 3rem;
+                                font-weight: bold;
+                                text-shadow: 0.75rem 0.75rem 0.5rem #d4d11c;
+                            }
+                        }
+                        .title2{
+                            h2{
+                                text-align: center;
+                                color: var(--mycolor12);
+                                font-size: 3rem;
+                                font-weight: bold;
+                                text-shadow: 0.75rem 0.75rem 0.5rem #d4d11c;
+                            }
+                        }
+
+                        .part1 {
+                            .col-12 {
+                                min-height: 19.5vw;
+
+                                .leftbox {
+                                    min-height: 19.5vw;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+
+                                    img {
+                                        border-radius: 50%;
+                                        margin: 0 30px;
+                                    }
+
+                                    .leftconent {
+                                        padding: 2rem;
+                                        line-height: 2rem;
+                                        font-size: 1.5rem;
+                                        font-weight: bolder;
+                                        background: linear-gradient(150deg, rgba(255, 255, 255, 0.3), rgba(180, 178, 37, 0.842));
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+
+                        // 右邊時間軸區塊
+                        .row {
+                            
+                            .part2 {
+                                
+                                .timeline {
+                                    position: relative;
+
+                                    &::before {
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        content: "";
+                                        width: 5px;
+                                        background: linear-gradient(to bottom, rgba(64, 216, 18, 1), rgba(12, 88, 28, 1));
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                    }
+
+                                    .col-12{
+                                        min-height: 19.5vw;
+                                        .rightbox {
+                                            background-color: #d4d11c;
+                                            min-height: 19.5vw;
+        
+                                        }
+                                    }
+
+                                }
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    // 頁尾
+    .footer {
+        min-height: 3vw;
+        background-color: bisque;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            color: var(--mycolor3);
+            font-size: 1rem;
+        }
+    }
+
+}
+
+
+
+
+
+// 響應式
+@media screen and (max-width:990px) {
+    body {
+        header {
+            nav {
+                .logo {
+                    .navbar-brand {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 20vw;
+                        }
+
+                        .logotext {
+                            display: block;
+                            color: var(--mycolor7);
+                            font-size: 2rem;
+                            font-weight: bolder;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// 首頁內容區
+@media screen and (max-width:768px) {
+    main {
+        .container {
+            .bottompar {
+                display: flex;
+                flex-direction: column-reverse;
+
+                .section2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+
+                    .par2leftimg {
+                        display: none;
+                    }
+
+                    .par2leftbottom {
+                        .icon {
+                            img {
+                                min-width: 10vw;
+                            }
+                        }
+                    }
+                }
+
+                .bottomtextr {
+                    .col-12 {
+                        margin-top: 30px;
+
+                    }
+                }
+            }
+        }
+    }
+}
