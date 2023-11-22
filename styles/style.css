@@ -4,12 +4,6 @@ html {
   max-width: 1400px;
   margin: 0 auto;
 }
-body header,
-html header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
 body header nav .logo .navbar-brand img,
 html header nav .logo .navbar-brand img {
   width: 8vw;
@@ -518,6 +512,50 @@ html .main2 .container .row .section1 .box .row .part2 .timeline .col-12 .text4 
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
   border-radius: 10% 0 0 10%;
   min-height: 10vw;
+}
+body .main3 .my-3,
+html .main3 .my-3 {
+  align-items: center;
+}
+body .main3 .my-3 .col-md-6 .toptext,
+html .main3 .my-3 .col-md-6 .toptext {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+}
+body .main3 .my-3 .col-md-6 .toptext h3,
+html .main3 .my-3 .col-md-6 .toptext h3 {
+  text-align: center;
+  font-weight: bolder;
+}
+body .main3 .my-3 .col-md-6 .toptext ul li,
+html .main3 .my-3 .col-md-6 .toptext ul li {
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  list-style: lower-roman;
+}
+body .main3 .my-3 .col-md-6 .toptext ul li span,
+html .main3 .my-3 .col-md-6 .toptext ul li span {
+  color: var(--mycolor14);
+}
+body .main3 .my-2 .row .mb-3 .card,
+html .main3 .my-2 .row .mb-3 .card {
+  border: 2px solid var(--mycolor13);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7));
+}
+body .main3 .my-2 .row .mb-3 .card .card-head,
+html .main3 .my-2 .row .mb-3 .card .card-head {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+body .main3 .my-2 .row .mb-3 .card .card-head h4,
+html .main3 .my-2 .row .mb-3 .card .card-head h4 {
+  color: var(--mycolor12);
+  font-weight: bolder;
+}
+body .main3 .my-2 .row .mb-3 .card .card-footer,
+html .main3 .my-2 .row .mb-3 .card .card-footer {
+  text-align: center;
 }
 body .footer,
 html .footer {

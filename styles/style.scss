@@ -560,7 +560,57 @@ html {
             }
         }
     }
-
+    // 產品訂購的main
+    .main3{
+       .my-3{
+        align-items: center;
+        .col-md-6{
+            .toptext{
+                background: rgba($color: #000000, $alpha: 0.2);
+                border-radius: 20%;
+                h3{
+                    text-align: center;
+                    font-weight: bolder;
+                }
+                ul{
+                    li{
+                        line-height: 2rem;
+                        font-size: 1rem;
+                        font-weight: 800;
+                        list-style: lower-roman;
+                        span{
+                            color:var(--mycolor14);  
+                             
+                        }
+                    }
+                }
+            }
+        }
+       }
+    //    下面商品區
+    .my-2{
+        .row{
+            .mb-3{
+                .card{
+                    border: 2px solid var(--mycolor13);
+                    background: linear-gradient(180deg,rgba(255,255,255,0.2),rgba(255,255,255,0.7));
+                    .card-head{
+                        text-align: center;
+                        padding-top: 0.5rem;
+                        h4{
+                            color: var(--mycolor12);
+                            font-weight: bolder;
+                        }
+                    }
+                    .card-footer{
+                        text-align: center;
+                        
+                    }
+                }
+            }
+        }
+    }
+    }
     // 頁尾
     .footer {
         min-height: 3vw;
