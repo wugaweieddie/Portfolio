@@ -359,6 +359,8 @@ html {
 
                                         img {
                                             border-radius: 50%;
+                                            height: 200px;
+                                            width: 200px;
 
                                             &:hover {
                                                 transform: scale(1.2);
@@ -629,7 +631,12 @@ html {
                                 font-weight: bolder;
                             }
                         }
-
+                        .card-body{
+                            p{
+                                margin-top: 10px;
+                                font-weight: 900;
+                            }
+                        }
                         .card-footer {
                             text-align: center;
 
@@ -729,6 +736,22 @@ html {
                     display: flex;
                     flex-wrap: nowrap;
                     animation: marquee 20s linear infinite;
+
+                    &:hover{
+                        animation-play-state: paused;
+                    }
+                    .cartcontent{
+                        .card{
+                           .card-head{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            h4{
+                                margin-top: 15px;
+                            }
+                           } 
+                        }
+                    }
                 }
 
                 @keyframes marquee {
@@ -743,6 +766,37 @@ html {
             }
 
 
+        }
+    }
+
+    // 產品選購內頁
+    .main5{
+        .banner{
+            height: 20vh;
+            background-image: url(../images/修過/banner.png);
+            background-position: center center;
+            background-size: cover;
+        }
+        .container{
+           .row{
+            .col-md-8{
+                .pimg{
+                    height: 35vw;
+                    background: url(../images/title.jpg);
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+            .col-md-4{
+                .mytext{
+                    h3{
+                        border: 0 0 3px 0;
+                        border-color: red;
+                        border-style: solid;
+                    }
+                }
+            }
+           } 
         }
     }
 

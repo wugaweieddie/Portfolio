@@ -340,6 +340,8 @@ html .main2 .container .row .section1 .box .part1 .left .leftbox .imgout {
 body .main2 .container .row .section1 .box .part1 .left .leftbox .imgout img,
 html .main2 .container .row .section1 .box .part1 .left .leftbox .imgout img {
   border-radius: 50%;
+  height: 200px;
+  width: 200px;
 }
 body .main2 .container .row .section1 .box .part1 .left .leftbox .imgout img:hover,
 html .main2 .container .row .section1 .box .part1 .left .leftbox .imgout img:hover {
@@ -565,6 +567,11 @@ html .main3 .my-2 .row .mb-3 .card .card-head h4 {
   color: var(--mycolor12);
   font-weight: bolder;
 }
+body .main3 .my-2 .row .mb-3 .card .card-body p,
+html .main3 .my-2 .row .mb-3 .card .card-body p {
+  margin-top: 10px;
+  font-weight: 900;
+}
 body .main3 .my-2 .row .mb-3 .card .card-footer,
 html .main3 .my-2 .row .mb-3 .card .card-footer {
   text-align: center;
@@ -658,6 +665,20 @@ html .main4 .container .sectionIII .cards {
   flex-wrap: nowrap;
   animation: marquee 20s linear infinite;
 }
+body .main4 .container .sectionIII .cards:hover,
+html .main4 .container .sectionIII .cards:hover {
+  animation-play-state: paused;
+}
+body .main4 .container .sectionIII .cards .cartcontent .card .card-head,
+html .main4 .container .sectionIII .cards .cartcontent .card .card-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body .main4 .container .sectionIII .cards .cartcontent .card .card-head h4,
+html .main4 .container .sectionIII .cards .cartcontent .card .card-head h4 {
+  margin-top: 15px;
+}
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -665,6 +686,26 @@ html .main4 .container .sectionIII .cards {
   100% {
     transform: translateX(-100%);
   }
+}
+body .main5 .banner,
+html .main5 .banner {
+  height: 20vh;
+  background-image: url(../images/修過/banner.png);
+  background-position: center center;
+  background-size: cover;
+}
+body .main5 .container .row .col-md-8 .pimg,
+html .main5 .container .row .col-md-8 .pimg {
+  height: 35vw;
+  background: url(../images/title.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+body .main5 .container .row .col-md-4 .mytext h3,
+html .main5 .container .row .col-md-4 .mytext h3 {
+  border: 0 0 3px 0;
+  border-color: red;
+  border-style: solid;
 }
 body .footer,
 html .footer {
