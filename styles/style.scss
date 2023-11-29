@@ -587,7 +587,8 @@ html {
         .my-3 {
             align-items: center;
 
-            .col-md-6 {
+            .attention-area {
+                visibility: hidden;
                 .toptext {
                     background: rgba($color: #000000, $alpha: 0.2);
                     border-radius: 20%;
@@ -631,12 +632,36 @@ html {
                                 font-weight: bolder;
                             }
                         }
-                        .card-body{
-                            p{
+
+                        .card-body {
+                            p {
                                 margin-top: 10px;
                                 font-weight: 900;
                             }
+
+                            .pimg1:hover {
+                                content: url("../images/修過/p4.png");           
+                            }
+                            .pimg2:hover {
+                                content: url("../images/修過/p5.png");           
+                            }
+                            .pimg3:hover {
+                                content: url("../images/修過/p6.png");           
+                            }
+                            .pimg4:hover {
+                                content: url("../images/修過/p7.png");           
+                            }
+                            .pimg5:hover {
+                                content: url("../images/修過/p8.png");           
+                            }
+                            .pimg6:hover {
+                                content: url("../images/修過/p9.png");           
+                            }
+                            .pimg7:hover {
+                                content: url("../images/修過/p10.png");           
+                            }
                         }
+
                         .card-footer {
                             text-align: center;
 
@@ -675,59 +700,74 @@ html {
                     }
                 }
             }
-            .sectionII{
-                .mid-r{
+
+            .sectionII {
+                .mid-r {
                     display: flex;
                     align-items: center;
-                    .imababy1,.imababy2,.imababy3,.imababy4{
+
+                    .imababy1,
+                    .imababy2,
+                    .imababy3,
+                    .imababy4 {
                         width: 10vw;
                         height: 10vw;
                     }
-                    .imababy1{
+
+                    .imababy1 {
                         transform: rotate(45deg);
                         animation: open 6s linear infinite;
                     }
-                    .imababy2{
+
+                    .imababy2 {
                         transform: rotate(330deg);
                         animation: open 3s linear infinite;
                     }
-                    .imababy3{
+
+                    .imababy3 {
                         transform: rotate(330deg);
                         animation: open 2s linear infinite;
                     }
-                    .imababy4{
+
+                    .imababy4 {
                         transform: rotate(45deg);
                         animation: open 7s alternate infinite;
                     }
+
                     @keyframes open {
-                        0%{
-                            opacity:0;
+                        0% {
+                            opacity: 0;
                             transform: translateX(0);
                             transform: translateY(-10%);
                         }
-                        25%{
-                            opacity:0.4 ;
+
+                        25% {
+                            opacity: 0.4;
                             transform: translateX(10%);
                             transform: translateY(-20%);
                         }
-                        50%{
+
+                        50% {
                             opacity: 0.6;
                             transform: translateX(20%);
                             transform: translateY(-25%);
                         }
-                        75%{
+
+                        75% {
                             opacity: 0.8;
                             transform: translateX(-10%);
-                            
+
                         }
-                        100%{
+
+                        100% {
                             opacity: 1;
                             transform: translateX(20%);
-                            
+
                         }
                     }
                 }
             }
+
             .sectionIII {
                 margin-top: 10%;
                 overflow: hidden;
@@ -737,19 +777,21 @@ html {
                     flex-wrap: nowrap;
                     animation: marquee 20s linear infinite;
 
-                    &:hover{
+                    &:hover {
                         animation-play-state: paused;
                     }
-                    .cartcontent{
-                        .card{
-                           .card-head{
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            h4{
-                                margin-top: 15px;
+
+                    .cartcontent {
+                        .card {
+                            .card-head {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+
+                                h4 {
+                                    margin-top: 15px;
+                                }
                             }
-                           } 
                         }
                     }
                 }
@@ -770,33 +812,35 @@ html {
     }
 
     // 產品選購內頁
-    .main5{
-        .banner{
+    .main5 {
+        .banner {
             height: 20vh;
             background-image: url(../images/修過/banner.png);
             background-position: center center;
             background-size: cover;
         }
-        .container{
-           .row{
-            .col-md-8{
-                .pimg{
-                    height: 35vw;
-                    background: url(../images/title.jpg);
-                    background-position: center center;
-                    background-size: cover;
+
+        .container {
+            .row {
+                .col-md-8 {
+                    .pimg {
+                        height: 35vw;
+                        background: url(../images/title.jpg);
+                        background-position: center center;
+                        background-size: cover;
+                    }
                 }
-            }
-            .col-md-4{
-                .mytext{
-                    h3{
-                        border: 0 0 3px 0;
-                        border-color: red;
-                        border-style: solid;
+
+                .col-md-4 {
+                    .mytext {
+                        h3 {
+                            border: 0 0 3px 0;
+                            border-color: red;
+                            border-style: solid;
+                        }
                     }
                 }
             }
-           } 
         }
     }
 

@@ -18,6 +18,22 @@ html header nav .logo .collapse .navbar-nav a {
   font-weight: bolder;
   color: var(--mycolor7);
   margin-right: 40px;
+  position: relative;
+}
+body header nav .logo .collapse .navbar-nav a::after,
+html header nav .logo .collapse .navbar-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0px;
+  height: 2px;
+  background-color: red;
+  transition: width 0.8s ease;
+}
+body header nav .logo .collapse .navbar-nav a:hover::after,
+html header nav .logo .collapse .navbar-nav a:hover::after {
+  width: 100%;
 }
 body .carousel .carousel-inner .carousel-item img,
 html .carousel .carousel-inner .carousel-item img {
@@ -531,25 +547,29 @@ body .main3 .my-3,
 html .main3 .my-3 {
   align-items: center;
 }
-body .main3 .my-3 .col-md-6 .toptext,
-html .main3 .my-3 .col-md-6 .toptext {
+body .main3 .my-3 .attention-area,
+html .main3 .my-3 .attention-area {
+  visibility: hidden;
+}
+body .main3 .my-3 .attention-area .toptext,
+html .main3 .my-3 .attention-area .toptext {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 20%;
 }
-body .main3 .my-3 .col-md-6 .toptext h3,
-html .main3 .my-3 .col-md-6 .toptext h3 {
+body .main3 .my-3 .attention-area .toptext h3,
+html .main3 .my-3 .attention-area .toptext h3 {
   text-align: center;
   font-weight: bolder;
 }
-body .main3 .my-3 .col-md-6 .toptext ul li,
-html .main3 .my-3 .col-md-6 .toptext ul li {
+body .main3 .my-3 .attention-area .toptext ul li,
+html .main3 .my-3 .attention-area .toptext ul li {
   line-height: 2rem;
   font-size: 1rem;
   font-weight: 800;
   list-style: lower-roman;
 }
-body .main3 .my-3 .col-md-6 .toptext ul li span,
-html .main3 .my-3 .col-md-6 .toptext ul li span {
+body .main3 .my-3 .attention-area .toptext ul li span,
+html .main3 .my-3 .attention-area .toptext ul li span {
   color: var(--mycolor14);
 }
 body .main3 .my-2 .row .mb-3 .card,
@@ -571,6 +591,34 @@ body .main3 .my-2 .row .mb-3 .card .card-body p,
 html .main3 .my-2 .row .mb-3 .card .card-body p {
   margin-top: 10px;
   font-weight: 900;
+}
+body .main3 .my-2 .row .mb-3 .card .card-body .pimg1:hover,
+html .main3 .my-2 .row .mb-3 .card .card-body .pimg1:hover {
+  content: url("../images/修過/p4.png");
+}
+body .main3 .my-2 .row .mb-3 .card .card-body .pimg2:hover,
+html .main3 .my-2 .row .mb-3 .card .card-body .pimg2:hover {
+  content: url("../images/修過/p5.png");
+}
+body .main3 .my-2 .row .mb-3 .card .card-body .pimg3:hover,
+html .main3 .my-2 .row .mb-3 .card .card-body .pimg3:hover {
+  content: url("../images/修過/p6.png");
+}
+body .main3 .my-2 .row .mb-3 .card .card-body .pimg4:hover,
+html .main3 .my-2 .row .mb-3 .card .card-body .pimg4:hover {
+  content: url("../images/修過/p7.png");
+}
+body .main3 .my-2 .row .mb-3 .card .card-body .pimg5:hover,
+html .main3 .my-2 .row .mb-3 .card .card-body .pimg5:hover {
+  content: url("../images/修過/p8.png");
+}
+body .main3 .my-2 .row .mb-3 .card .card-body .pimg6:hover,
+html .main3 .my-2 .row .mb-3 .card .card-body .pimg6:hover {
+  content: url("../images/修過/p9.png");
+}
+body .main3 .my-2 .row .mb-3 .card .card-body .pimg7:hover,
+html .main3 .my-2 .row .mb-3 .card .card-body .pimg7:hover {
+  content: url("../images/修過/p10.png");
 }
 body .main3 .my-2 .row .mb-3 .card .card-footer,
 html .main3 .my-2 .row .mb-3 .card .card-footer {
@@ -601,7 +649,10 @@ html .main4 .container .sectionII .mid-r {
   display: flex;
   align-items: center;
 }
-body .main4 .container .sectionII .mid-r .imababy1, body .main4 .container .sectionII .mid-r .imababy2, body .main4 .container .sectionII .mid-r .imababy3, body .main4 .container .sectionII .mid-r .imababy4,
+body .main4 .container .sectionII .mid-r .imababy1,
+body .main4 .container .sectionII .mid-r .imababy2,
+body .main4 .container .sectionII .mid-r .imababy3,
+body .main4 .container .sectionII .mid-r .imababy4,
 html .main4 .container .sectionII .mid-r .imababy1,
 html .main4 .container .sectionII .mid-r .imababy2,
 html .main4 .container .sectionII .mid-r .imababy3,
