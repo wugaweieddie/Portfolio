@@ -588,7 +588,8 @@ html {
             align-items: center;
 
             .attention-area {
-                visibility: hidden;
+                opacity: 0;
+                transition: 2s;
                 .toptext {
                     background: rgba($color: #000000, $alpha: 0.2);
                     border-radius: 20%;

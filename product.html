@@ -84,7 +84,7 @@
 
     <div class="main3">
         <div class="row my-3">
-            <div class="col-md-6 attention-area">
+            <div class="col-md-6 attention-area" id="area">
                 <div class="toptext p-3">
                     <h3>接收物品注意事項</h3>
                     <ul>
@@ -261,6 +261,10 @@
                     } else {
                         $("#backtop").stop().fadeOut(222);
                     }
+                });
+
+                $("#area").mouseover(function(){
+                    $("#area").css("opacity","1");
                 });
             });
             
