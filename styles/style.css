@@ -549,7 +549,8 @@ html .main3 .my-3 {
 }
 body .main3 .my-3 .attention-area,
 html .main3 .my-3 .attention-area {
-  visibility: hidden;
+  opacity: 0;
+  transition: 2s;
 }
 body .main3 .my-3 .attention-area .toptext,
 html .main3 .my-3 .attention-area .toptext {
