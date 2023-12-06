@@ -625,6 +625,12 @@ body .main3 .my-2 .row .mb-3 .card .card-footer,
 html .main3 .my-2 .row .mb-3 .card .card-footer {
   text-align: center;
 }
+body .main3 .my-2 .row .mb-3 .card:hover,
+html .main3 .my-2 .row .mb-3 .card:hover {
+  box-shadow: 5px 5px 5px black;
+  transform: skew(-2deg);
+  transition: 0.3s;
+}
 body .main4,
 html .main4 {
   background: linear-gradient(160deg, var(--mycolor1), var(--mycolor12));
@@ -664,51 +670,22 @@ html .main4 .container .sectionII .mid-r .imababy4 {
 body .main4 .container .sectionII .mid-r .imababy1,
 html .main4 .container .sectionII .mid-r .imababy1 {
   transform: rotate(45deg);
-  -webkit-animation: open 6s linear infinite;
-          animation: open 6s linear infinite;
+  animation: open 6s linear infinite;
 }
 body .main4 .container .sectionII .mid-r .imababy2,
 html .main4 .container .sectionII .mid-r .imababy2 {
   transform: rotate(330deg);
-  -webkit-animation: open 3s linear infinite;
-          animation: open 3s linear infinite;
+  animation: open 3s linear infinite;
 }
 body .main4 .container .sectionII .mid-r .imababy3,
 html .main4 .container .sectionII .mid-r .imababy3 {
   transform: rotate(330deg);
-  -webkit-animation: open 2s linear infinite;
-          animation: open 2s linear infinite;
+  animation: open 2s linear infinite;
 }
 body .main4 .container .sectionII .mid-r .imababy4,
 html .main4 .container .sectionII .mid-r .imababy4 {
   transform: rotate(45deg);
-  -webkit-animation: open 7s alternate infinite;
-          animation: open 7s alternate infinite;
-}
-@-webkit-keyframes open {
-  0% {
-    opacity: 0;
-    transform: translateX(0);
-    transform: translateY(-10%);
-  }
-  25% {
-    opacity: 0.4;
-    transform: translateX(10%);
-    transform: translateY(-20%);
-  }
-  50% {
-    opacity: 0.6;
-    transform: translateX(20%);
-    transform: translateY(-25%);
-  }
-  75% {
-    opacity: 0.8;
-    transform: translateX(-10%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(20%);
-  }
+  animation: open 7s alternate infinite;
 }
 @keyframes open {
   0% {
@@ -744,13 +721,11 @@ body .main4 .container .sectionIII .cards,
 html .main4 .container .sectionIII .cards {
   display: flex;
   flex-wrap: nowrap;
-  -webkit-animation: marquee 20s linear infinite;
-          animation: marquee 20s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 body .main4 .container .sectionIII .cards:hover,
 html .main4 .container .sectionIII .cards:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
 }
 body .main4 .container .sectionIII .cards .cartcontent .card .card-head,
 html .main4 .container .sectionIII .cards .cartcontent .card .card-head {
@@ -762,14 +737,6 @@ body .main4 .container .sectionIII .cards .cartcontent .card .card-head h4,
 html .main4 .container .sectionIII .cards .cartcontent .card .card-head h4 {
   margin-top: 15px;
 }
-@-webkit-keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -778,12 +745,22 @@ html .main4 .container .sectionIII .cards .cartcontent .card .card-head h4 {
     transform: translateX(-100%);
   }
 }
+body .main5,
+html .main5 {
+  background: linear-gradient(330deg, var(--mycolor8), var(--mycolor12));
+  padding-bottom: 3%;
+}
 body .main5 .banner,
 html .main5 .banner {
   height: 20vh;
   background-image: url(../images/修過/banner.png);
   background-position: center center;
   background-size: cover;
+}
+body .main5 .container .title h3 .texten,
+html .main5 .container .title h3 .texten {
+  color: rgb(105, 101, 101);
+  text-shadow: 2px 2px 2px white;
 }
 body .main5 .container .row .col-md-8 .pimg,
 html .main5 .container .row .col-md-8 .pimg {
@@ -878,5 +855,8 @@ html .footer p {
   }
   .main4 .container .sectionI .top-r .center {
     margin: 0 auto;
+  }
+  .main4 .container .sectionII .mid-r {
+    display: none !important;
   }
 }/*# sourceMappingURL=style.css.map */

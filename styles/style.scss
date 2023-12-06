@@ -667,6 +667,11 @@ html {
                             text-align: center;
 
                         }
+                        &:hover{
+                            box-shadow: 5px 5px 5px black;
+                            transform: skew(-2deg);
+                            transition: 0.3s;
+                        }
                     }
                 }
             }
@@ -814,6 +819,8 @@ html {
 
     // 產品選購內頁
     .main5 {
+        background: linear-gradient(330deg,var(--mycolor8),var(--mycolor12));
+        padding-bottom: 3%;
         .banner {
             height: 20vh;
             background-image: url(../images/修過/banner.png);
@@ -822,6 +829,14 @@ html {
         }
 
         .container {
+            .title{
+                h3{
+                    .texten{
+                        color: rgb(105, 101, 101);
+                        text-shadow: 2px 2px 2px white;
+                    }
+                }
+            }
             .row {
                 .col-md-8 {
                     .pimg {
@@ -852,6 +867,7 @@ html {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        
 
         p {
             color: var(--mycolor3);
@@ -1011,6 +1027,11 @@ html {
                     }
                 }
 
+            }
+            .sectionII{
+                .mid-r{
+                    display: none !important;
+                }
             }
         }
     }
