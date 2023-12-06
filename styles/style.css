@@ -664,22 +664,51 @@ html .main4 .container .sectionII .mid-r .imababy4 {
 body .main4 .container .sectionII .mid-r .imababy1,
 html .main4 .container .sectionII .mid-r .imababy1 {
   transform: rotate(45deg);
-  animation: open 6s linear infinite;
+  -webkit-animation: open 6s linear infinite;
+          animation: open 6s linear infinite;
 }
 body .main4 .container .sectionII .mid-r .imababy2,
 html .main4 .container .sectionII .mid-r .imababy2 {
   transform: rotate(330deg);
-  animation: open 3s linear infinite;
+  -webkit-animation: open 3s linear infinite;
+          animation: open 3s linear infinite;
 }
 body .main4 .container .sectionII .mid-r .imababy3,
 html .main4 .container .sectionII .mid-r .imababy3 {
   transform: rotate(330deg);
-  animation: open 2s linear infinite;
+  -webkit-animation: open 2s linear infinite;
+          animation: open 2s linear infinite;
 }
 body .main4 .container .sectionII .mid-r .imababy4,
 html .main4 .container .sectionII .mid-r .imababy4 {
   transform: rotate(45deg);
-  animation: open 7s alternate infinite;
+  -webkit-animation: open 7s alternate infinite;
+          animation: open 7s alternate infinite;
+}
+@-webkit-keyframes open {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+    transform: translateY(-10%);
+  }
+  25% {
+    opacity: 0.4;
+    transform: translateX(10%);
+    transform: translateY(-20%);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateX(20%);
+    transform: translateY(-25%);
+  }
+  75% {
+    opacity: 0.8;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(20%);
+  }
 }
 @keyframes open {
   0% {
@@ -715,11 +744,13 @@ body .main4 .container .sectionIII .cards,
 html .main4 .container .sectionIII .cards {
   display: flex;
   flex-wrap: nowrap;
-  animation: marquee 20s linear infinite;
+  -webkit-animation: marquee 20s linear infinite;
+          animation: marquee 20s linear infinite;
 }
 body .main4 .container .sectionIII .cards:hover,
 html .main4 .container .sectionIII .cards:hover {
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 body .main4 .container .sectionIII .cards .cartcontent .card .card-head,
 html .main4 .container .sectionIII .cards .cartcontent .card .card-head {
@@ -730,6 +761,14 @@ html .main4 .container .sectionIII .cards .cartcontent .card .card-head {
 body .main4 .container .sectionIII .cards .cartcontent .card .card-head h4,
 html .main4 .container .sectionIII .cards .cartcontent .card .card-head h4 {
   margin-top: 15px;
+}
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 @keyframes marquee {
   0% {
@@ -755,9 +794,7 @@ html .main5 .container .row .col-md-8 .pimg {
 }
 body .main5 .container .row .col-md-4 .mytext h3,
 html .main5 .container .row .col-md-4 .mytext h3 {
-  border: 0 0 3px 0;
-  border-color: red;
-  border-style: solid;
+  border-bottom: 3px solid red;
 }
 body .footer,
 html .footer {

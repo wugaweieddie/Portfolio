@@ -61,24 +61,25 @@
                 </div>
                 <!-- body -->
                 <div class="modal-body">
-                    <form>
+                    <div>
                         <div class="mb-3 username">
                             <label for="" class="form-label">訂單編號</label>
-                            <input id="listname" type="text" class="form-control " placeholder="請輸入訂單編號">
+                            <input id="listname" type="text" class="form-control " placeholder="請輸入訂單編號" value="20231204">
                         </div>
                         <div class="mb-3 usermimi">
                             <label for="tel" class="form-label">電話</label>
-                            <input id="tel" type="text" class="form-control" placeholder="請輸入電話號碼">
+                            <input id="tel" type="text" class="form-control" placeholder="請輸入電話號碼" value="098888111">
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label">購買日期</label>
                             <input type="date" name="" id="buyday" class="form-control">
                         </div>
-                        <div class="checkbox mb-3 d-flex">
-                            <input id="check" type="checkbox" class="form-check mx-1">記住訂單編號
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" role="switch" name="sw1" id="sw1">
+                            <label class="form-check-label" for="sw1">未確認資料</label>
                         </div>
                         <button id="OK_btn" class="btn btn-info" style="width: 100%;">確認</button>
-                    </form>
+                    </div>
                 </div>
                 <!-- footer -->
                 <div class="modal-footer">
@@ -267,6 +268,8 @@
     <script src="./js/Jquery.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/list.js"></script>
+    
+    
     
     <script>
         // 回最上層按鈕

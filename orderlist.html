@@ -30,10 +30,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="./index.html">百香果B2C</a>
+                        <a class="nav-link " aria-current="page" href="./index.html">百香果B2C</a>
                         <a class="nav-link" href="./about.html" target="_self">關於我們</a>
-                        <a class="nav-link text-danger" href="#">商品訂購</a>
-                        <a class="nav-link" href="#">聯絡我們</a>
+                        <a class="nav-link text-danger" href="./product.html" target="_self">商品訂購</a>
+                        <a class="nav-link" href="./contactus.html" target="_self">聯絡我們</a>
                         <a class="nav-link" href="#" type="button" data-bs-toggle="modal"
                             data-bs-target="#suflist">訂單查詢</a>
                     </div>
@@ -54,24 +54,25 @@
                 </div>
                 <!-- body -->
                 <div class="modal-body">
-                    <form>
+                    <div>
                         <div class="mb-3 username">
                             <label for="" class="form-label">訂單編號</label>
-                            <input type="text" class="form-control " placeholder="請輸入訂單編號">
+                            <input id="listname" type="text" class="form-control " placeholder="請輸入訂單編號" value="20231204">
                         </div>
                         <div class="mb-3 usermimi">
-                            <label for="" class="form-label">電話</label>
-                            <input type="text" class="form-control" placeholder="請輸入電話號碼">
+                            <label for="tel" class="form-label">電話</label>
+                            <input id="tel" type="text" class="form-control" placeholder="請輸入電話號碼" value="098888111">
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label">購買日期</label>
-                            <input type="date" name="" id="" class="form-control">
+                            <input type="date" name="" id="buyday" class="form-control">
                         </div>
-                        <div class="checkbox mb-3 d-flex">
-                            <input type="checkbox" class="form-check mx-1">記住訂單編號
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" role="switch" name="sw1" id="sw1">
+                            <label class="form-check-label" for="sw1">未確認資料</label>
                         </div>
-                        <button class="btn btn-info" style="width: 100%;">確認</button>
-                    </form>
+                        <button id="OK_btn" class="btn btn-info" style="width: 100%;">確認</button>
+                    </div>
                 </div>
                 <!-- footer -->
                 <div class="modal-footer">
@@ -94,14 +95,17 @@
                     <div class="mytext">
                         <h3 class="text-warning fw-bolder">百香果</h3>
                         <p></p>
-                        <p>價格：來店就送</p>
-                        <p>分類:<span class="text-bg-warning rounded-2 me-2">百香果</span><span class="text-bg-danger rounded-2">荔枝</span></p>
+                        <p>價格：500/箱</p>
+                        <p>分類:<span class="text-bg-warning rounded-2 me-2">百香果</span></p>
                     </div>
                     <div class="form-group">
                         <label for="" class="form-label">數量</label>
-                        <input type="number" class="form-control" min="0" max="100">
+                        <input type="number" class="form-control" min="0" max="100" id="pnum">
                     </div>
-                    <button class="btn btn-primary mt-2 w-100">訂購</button>
+                    <div class="form-group">
+                        <label for="" class="form-label" id="showmon">總金額</label>
+                    </div>
+                    <button class="btn btn-primary mt-2 w-100" id="ok_btn">訂購</button>
                 </div>
             </div>
         </div>
@@ -115,6 +119,7 @@
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/Jquery.js"></script>
+    <script src="./js/list.js"></script>
     <script>
         // 回最上層按鈕
         $(function () {
@@ -129,6 +134,24 @@
                     $("#backtop").stop().fadeOut(222);
                 }
             });
+        });
+
+
+        $(function () {
+            let numb = 0;
+            let monb = 0;
+            $("#pnum").change(function () {
+                console.log($("#pnum").val());
+                var mon = $("#pnum").val() * 500;
+                $("#showmon").html("總金額:" + mon + "元");
+                numb = ($("#pnum").val());
+                monb=mon;
+            });
+            $("#ok_btn").bind("click", function () {
+                let textmon ='請確認訂購數量為:'+ numb +'箱\n\n總金額:'+ monb +'元';
+                confirm(textmon);
+            });
+
         });
     </script>
 </body>
