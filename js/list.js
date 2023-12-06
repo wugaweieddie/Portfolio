@@ -23,7 +23,7 @@ $(function () {
             // console.log(typeof Number(user["listname"]));
             if (listnames == Number(user["listname"])) {
                 if (tel == user.tel) {
-                    alert("成功");
+                   document.location.href="../login.html";
                 } else {
                     alert("電話號碼錯誤");
                 }
