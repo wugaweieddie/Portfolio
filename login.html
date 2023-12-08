@@ -41,11 +41,8 @@
                         <a class="nav-link" href="./about.html" target="_self">關於我們</a>
                         <a class="nav-link" href="./product.html" target="_self">商品訂購</a>
                         <a class="nav-link" href="./contactus.html" target="_self">聯絡我們</a>
-                        <a class="nav-link" href="#" type="button" data-bs-toggle="modal"
-                            data-bs-target="#suflist">訂單查詢</a>
-                    </div>
-                    <div>
-                        <h2 class="text-danger">歡迎回來!</h2>
+                        <a class="nav-link" href="#" type="button" data-bs-toggle="modal"data-bs-target="#suflist">訂單查詢</a>
+                        <a class="nav-link" id="visitor"><h3>歡迎回來</h3></a>
                     </div>
                 </div>
             </div>
@@ -107,11 +104,11 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="fulist"></td>
+                            <td id="fulist" ></td>
                             <td id="fudate"></td>
                             <td id="futel"></td>
-                            <td id="fruit"></td>
-                            <td id="monmon"></td>
+                            <td id="fruit" ></td>
+                            <td id="monmon" ></td>
                         </tr>
                     </tbody>
                 </table>
@@ -162,6 +159,8 @@
             $("#fulist").text(list);
             $("#futel").text(tel);
             $("#fudate").text(alldate);
+            let strhtml = '<span style="color: red;">訂單的客戶歡迎回來</span>';
+            $("#visitor").html(list+strhtml);
         
         });
     </script>
