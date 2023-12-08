@@ -57,11 +57,11 @@
                     <div>
                         <div class="mb-3 username">
                             <label for="" class="form-label">訂單編號</label>
-                            <input id="listname" type="text" class="form-control " placeholder="請輸入訂單編號" value="20231204">
+                            <input id="listname" type="text" class="form-control " placeholder="請輸入訂單編號">
                         </div>
                         <div class="mb-3 usermimi">
                             <label for="tel" class="form-label">電話</label>
-                            <input id="tel" type="text" class="form-control" placeholder="請輸入電話號碼" value="098888111">
+                            <input id="tel" type="text" class="form-control" placeholder="請輸入電話號碼">
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label">購買日期</label>
@@ -145,14 +145,47 @@
                 var mon = $("#pnum").val() * 500;
                 $("#showmon").html("總金額:" + mon + "元");
                 numb = ($("#pnum").val());
-                monb=mon;
+                monb = mon;
             });
+
+            //取得當下日期時間當作訂單編號
+                let time = new Date();
+                let thetime = time.getTime();
+                // console.log(thetime);
+                let datelist = {
+                    year: time.getFullYear(),
+                    month: time.getMonth() + 1,
+                    date: time.getDate(),
+                    minute: time.getMinutes()
+                }
+                let list1 = datelist.year.toString();
+                // console.log(typeof list1, list1);
+                let list2 = datelist.month.toString();
+                let list3 = datelist.date.toString();
+                let list4 = datelist.minute.toString();
+                let listall = list1 + list2 + list3 + list4;
+                // console.log(typeof listall, listall);
+                let alldate=time.toLocaleString();
+                // console.log(typeof alldate);
+                
+
+
             $("#ok_btn").bind("click", function () {
-                let textmon ='請確認訂購數量為:'+ numb +'箱\n\n總金額:'+ monb +'元';
-                confirm(textmon);
+                let textmon = '請確認訂購數量為:' + numb + '箱\n\n總金額:' + monb + '元\n\n您的訂單編號為:'+listall;
+                confirm(textmon,);
+                let tel = prompt("輸入電話號碼");
+                localStorage.setItem("tel", tel);
+                window.location.replace("../login.html");
+                //將數量金額存到記憶體
+                localStorage.setItem("number", numb);   //數量
+                localStorage.setItem("mon", monb);      //金額
+                localStorage.setItem("list",listall);   //訂單編號
+                localStorage.setItem("data",alldate);   //下訂日期
             });
 
         });
+
+
     </script>
 </body>
 

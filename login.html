@@ -67,12 +67,11 @@
                     <div>
                         <div class="mb-3 username">
                             <label for="" class="form-label">訂單編號</label>
-                            <input id="listname" type="text" class="form-control " placeholder="請輸入訂單編號"
-                                value="20231204">
+                            <input id="listname" type="text" class="form-control " placeholder="請輸入訂單編號">
                         </div>
                         <div class="mb-3 usermimi">
                             <label for="tel" class="form-label">電話</label>
-                            <input id="tel" type="text" class="form-control" placeholder="請輸入電話號碼" value="098888111">
+                            <input id="tel" type="text" class="form-control" placeholder="請輸入電話號碼">
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label">購買日期</label>
@@ -108,13 +107,11 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>202312062012</td>
-                            <td>2023-12-06</td>
-                            <td>0977125453</td>
-                            <td>
-                                百香果:5箱
-                            </td>
-                            <td>4500</td>
+                            <td id="fulist"></td>
+                            <td id="fudate"></td>
+                            <td id="futel"></td>
+                            <td id="fruit"></td>
+                            <td id="monmon"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -135,6 +132,8 @@
 
 
     <script>
+        let alldate = localStorage.getItem("data");
+
         // 回最上層按鈕
         $(function () {
             $("#backtop").click(function () {
@@ -148,6 +147,22 @@
                     $("#backtop").stop().fadeOut(222);
                 }
             });
+
+            let number = Number(localStorage.getItem("number"));
+            // console.log(typeof number,number);
+            let mon = Number(localStorage.getItem("mon"));
+            // console.log(typeof mon ,mon);
+             //從瀏覽器接回資料秀到表單中
+             let tel = localStorage.getItem("tel");
+            // console.log(tel);
+            let list =  localStorage.getItem("list");
+            // console.log(list);
+            $("#fruit").html("百香果:"+number+"箱");
+            $("#monmon").html("總金額:"+mon+"元");
+            $("#fulist").text(list);
+            $("#futel").text(tel);
+            $("#fudate").text(alldate);
+        
         });
     </script>
 </body>

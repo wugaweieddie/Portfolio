@@ -1,4 +1,8 @@
-var user = { "listname": "20231204", "tel": "098888111" };
+// var user = { "listname": "20231204", "tel": "098888111" };
+let listname = localStorage.getItem("list");
+let tels = localStorage.getItem("tel");
+
+
 var isAgree;
 $(function () {
 
@@ -21,9 +25,10 @@ $(function () {
             var listnames = Number($("#listname").val()); //輸入的
             var tel = $("#tel").val();
             // console.log(typeof Number(user["listname"]));
-            if (listnames == Number(user["listname"])) {
-                if (tel == user.tel) {
-                   document.location.href="../login.html";
+            if (listnames == listname) {
+                if (tel == tels) {
+                //    window.location.href="../login.html";
+                   window.location.replace("../login.html");
                 } else {
                     alert("電話號碼錯誤");
                 }
