@@ -1,5 +1,6 @@
 // var user = { "listname": "20231204", "tel": "098888111" };
 let listname = localStorage.getItem("list");
+console.log(typeof listname,listname);
 let tels = localStorage.getItem("tel");
 
 
@@ -22,7 +23,7 @@ $(function () {
 
     $("#OK_btn").bind("click", function () {
         if (isAgree == true) {
-            var listnames = Number($("#listname").val()); //輸入的
+            var listnames = $("#listname").val(); //輸入的
             var tel = $("#tel").val();
             // console.log(typeof Number(user["listname"]));
             if (listnames == listname) {
