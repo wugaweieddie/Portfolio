@@ -773,6 +773,18 @@ body .main5 .container .row .col-md-4 .mytext h3,
 html .main5 .container .row .col-md-4 .mytext h3 {
   border-bottom: 3px solid red;
 }
+body .main6 .container .row table thead tr th,
+html .main6 .container .row table thead tr th {
+  font-size: 1.5rem;
+  line-height: 1rem;
+  text-align: center;
+}
+body .main6 .container .row table tbody tr td,
+html .main6 .container .row table tbody tr td {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  text-align: center;
+}
 body .footer,
 html .footer {
   min-height: 3vw;
@@ -858,5 +870,17 @@ html .footer p {
   }
   .main4 .container .sectionII .mid-r {
     display: none !important;
+  }
+  .main6 .container .row table thead {
+    display: none;
+  }
+  .main6 .container .row table tbody tr td {
+    display: block;
+  }
+  .main6 .container .row table tbody tr td::before {
+    content: attr(data-th) ":";
+    color: var(--mycolor8);
+    font-weight: 600;
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

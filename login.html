@@ -35,14 +35,14 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link text-danger" aria-current="page" href="./index.html">百香果B2C</a>
                         <a class="nav-link" href="./about.html" target="_self">關於我們</a>
                         <a class="nav-link" href="./product.html" target="_self">商品訂購</a>
                         <a class="nav-link" href="./contactus.html" target="_self">聯絡我們</a>
-                        <a class="nav-link" href="#" type="button" data-bs-toggle="modal"data-bs-target="#suflist">訂單查詢</a>
-                        <a class="nav-link" id="visitor"><h3>歡迎回來</h3></a>
+                        <a class="nav-link" href="#" type="button" data-bs-toggle="modal"
+                            data-bs-target="#suflist">訂單查詢</a>
                     </div>
                 </div>
             </div>
@@ -92,6 +92,7 @@
     <main class="main6">
         <div class="container">
             <div class="row">
+                <div class="welcome mt-5" id="visitor">訪客</div>
                 <table class="table table-active table-bordered mt-5">
                     <thead class="table-dark">
                         <tr>
@@ -104,14 +105,18 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="fulist" ></td>
-                            <td id="fudate"></td>
-                            <td id="futel"></td>
-                            <td id="fruit" ></td>
-                            <td id="monmon" ></td>
+                            <td id="fulist" data-th="訂單編號"></td>
+                            <td id="fudate" data-th="訂購日期"></td>
+                            <td id="futel" data-th="電話"></td>
+                            <td id="fruit" data-th="訂單內容" ></td>
+                            <td id="monmon" data-th="總金額" ></td>
                         </tr>
                     </tbody>
                 </table>
+                <div class="btns my-3 d-flex justify-content-end">
+                    <button class="btn btn-info me-2">修改</button>
+                    <button class="btn btn-danger">刪除</button>
+                </div>
             </div>
         </div>
     </main>
@@ -155,12 +160,12 @@
             let list =  localStorage.getItem("list");
             // console.log(list);
             $("#fruit").html("百香果:"+number+"箱");
-            $("#monmon").html("總金額:"+mon+"元");
+            $("#monmon").html(mon+"元");
             $("#fulist").text(list);
             $("#futel").text(tel);
             $("#fudate").text(alldate);
             let strhtml = '<span style="color: red;">訂單的客戶歡迎回來</span>';
-            $("#visitor").html(list+strhtml);
+            $("#visitor").html("<h3>"+list+strhtml+"</h3>");
         
         });
     </script>

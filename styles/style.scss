@@ -857,7 +857,33 @@ html {
             }
         }
     }
-
+   //登入後清單
+    .main6{
+        .container{
+            .row{
+                table{
+                    thead{
+                        tr{
+                            th{
+                                font-size: 1.5rem;
+                                line-height: 1rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                font-size: 1.25rem;
+                                line-height: 2rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     // 頁尾
     .footer {
@@ -1035,5 +1061,29 @@ html {
             }
         }
     }
-    
+    //登入後清單
+    .main6{
+        .container{
+            .row{
+                table{
+                    thead{
+                        display: none;
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                display: block;
+                                &::before{
+                                    content: attr(data-th) ":";
+                                    color:var(--mycolor8);
+                                    font-weight: 600;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
