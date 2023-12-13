@@ -156,6 +156,7 @@
                     year: time.getFullYear(),
                     month: time.getMonth() + 1,
                     date: time.getDate(),
+                    hour:time.getHours(),
                     minute: time.getMinutes()
                 }
                 let list1 = datelist.year.toString();
@@ -163,7 +164,8 @@
                 let list2 = datelist.month.toString();
                 let list3 = datelist.date.toString();
                 let list4 = datelist.minute.toString();
-                let listall = list1 + list2 + list3 + list4;
+                let list5 = datelist.hour.toString();
+                let listall = list1 + list2 + list3 + list5+list4;
                 // console.log(typeof listall, listall);
                 let alldate=time.toLocaleString();
                 // console.log(typeof alldate);
