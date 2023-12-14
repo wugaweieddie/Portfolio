@@ -39,6 +39,12 @@ body .carousel .carousel-inner .carousel-item img,
 html .carousel .carousel-inner .carousel-item img {
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  body .carousel .carousel-inner .carousel-item img,
+  html .carousel .carousel-inner .carousel-item img {
+    height: 50vh;
+  }
+}
 body .toTop-arrow img,
 html .toTop-arrow img {
   width: 10rem;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/myall.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="shortcut icon" href="./icon/a85kf-dkvgc-001.ico">
     <style>
         header {
             position: sticky;
@@ -285,6 +286,14 @@
                     $("#backtop").stop().fadeOut(222);
                 }
             });
+        });
+
+
+        let header = document.querySelector("header");
+        window.addEventListener("scroll",()=>{
+            if(window.pageYOffset !=0){
+                header.style = "box-shadow:3px 3px 5px 1px #000"
+            }
         });
     </script>
 </body>
