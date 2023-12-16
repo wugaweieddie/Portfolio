@@ -590,6 +590,7 @@ html {
             .attention-area {
                 opacity: 0;
                 transition: 2s;
+
                 .toptext {
                     background: rgba($color: #000000, $alpha: 0.2);
                     border-radius: 20%;
@@ -641,25 +642,31 @@ html {
                             }
 
                             .pimg1:hover {
-                                content: url("../images/修過/p4.png");           
+                                content: url("../images/修過/p4.png");
                             }
+
                             .pimg2:hover {
-                                content: url("../images/修過/p5.png");           
+                                content: url("../images/修過/p5.png");
                             }
+
                             .pimg3:hover {
-                                content: url("../images/修過/p6.png");           
+                                content: url("../images/修過/p6.png");
                             }
+
                             .pimg4:hover {
-                                content: url("../images/修過/p7.png");           
+                                content: url("../images/修過/p7.png");
                             }
+
                             .pimg5:hover {
-                                content: url("../images/修過/p8.png");           
+                                content: url("../images/修過/p8.png");
                             }
+
                             .pimg6:hover {
-                                content: url("../images/修過/p9.png");           
+                                content: url("../images/修過/p9.png");
                             }
+
                             .pimg7:hover {
-                                content: url("../images/修過/p10.png");           
+                                content: url("../images/修過/p10.png");
                             }
                         }
 
@@ -667,7 +674,8 @@ html {
                             text-align: center;
 
                         }
-                        &:hover{
+
+                        &:hover {
                             box-shadow: 5px 5px 5px black;
                             transform: skew(-2deg);
                             transition: 0.3s;
@@ -819,8 +827,9 @@ html {
 
     // 產品選購內頁
     .main5 {
-        background: linear-gradient(330deg,var(--mycolor8),var(--mycolor12));
+        background: linear-gradient(330deg, var(--mycolor8), var(--mycolor12));
         padding-bottom: 3%;
+
         .banner {
             height: 20vh;
             background-image: url(../images/修過/banner.png);
@@ -829,35 +838,50 @@ html {
         }
 
         .container {
-            .title{
-                h3{
-                    .texten{
+            .title {
+                h3 {
+                    .texten {
                         color: rgb(105, 101, 101);
                         text-shadow: 2px 2px 2px white;
                     }
                 }
             }
+
             .row {
                 .col-md-8 {
-                    .iframes{
-                        height: 30vw;
+                    .iframes {
+                        height: 25vw;
                         display: flex;
                         justify-content: center;
-                        iframe{
-                            border: 2px solid  red;
-                            
-                        }
                     }
-                    .iframes-imges{
+
+                    .iframes-imges {
                         height: 20vw;
+                        margin-top: 10px;
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
-                        margin-top: 10px;
-                        img{
-                            height: 80%;
-                            width: 80%;
+
+                        a {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+
+                            img {
+                                height: 80%;
+                                width: 80%;
+                                border-radius: 20%;
+                                &:hover{
+                                    border: 5px solid white;
+                                }
+                            }
+                            &:hover{
+                                opacity: 0.7;
+                                
+                            }
                         }
+
+
                     }
                 }
 
@@ -871,23 +895,25 @@ html {
             }
         }
     }
-   //登入後清單
-    .main6{
-        .container{
-            .row{
-                table{
-                    thead{
-                        tr{
-                            th{
+
+    //登入後清單
+    .main6 {
+        .container {
+            .row {
+                table {
+                    thead {
+                        tr {
+                            th {
                                 font-size: 1.5rem;
                                 line-height: 1rem;
                                 text-align: center;
                             }
                         }
                     }
-                    tbody{
-                        tr{
-                            td{
+
+                    tbody {
+                        tr {
+                            td {
                                 font-size: 1.25rem;
                                 line-height: 2rem;
                                 text-align: center;
@@ -907,7 +933,7 @@ html {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        
+
 
         p {
             color: var(--mycolor3);
@@ -1057,6 +1083,7 @@ html {
             }
         }
     }
+
     // 聯絡我們
     .main4 {
         .container {
@@ -1068,28 +1095,32 @@ html {
                 }
 
             }
-            .sectionII{
-                .mid-r{
+
+            .sectionII {
+                .mid-r {
                     display: none !important;
                 }
             }
         }
     }
+
     //登入後清單
-    .main6{
-        .container{
-            .row{
-                table{
-                    thead{
+    .main6 {
+        .container {
+            .row {
+                table {
+                    thead {
                         display: none;
                     }
-                    tbody{
-                        tr{
-                            td{
+
+                    tbody {
+                        tr {
+                            td {
                                 display: block;
-                                &::before{
+
+                                &::before {
                                     content: attr(data-th) ":";
-                                    color:var(--mycolor8);
+                                    color: var(--mycolor8);
                                     font-weight: 600;
                                     display: block;
                                 }
