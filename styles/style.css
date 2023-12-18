@@ -898,6 +898,10 @@ html .footer p {
   .main2 .section1 .rightbox .row .part2 .timeline::before {
     display: none;
   }
+  .main5 .container .row .col-md-8 .iframes {
+    height: 80vw !important;
+    width: 100vw;
+  }
   .main4 .container .sectionI .top-r .center {
     margin: 0 auto;
   }

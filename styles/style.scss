@@ -1084,7 +1084,18 @@ html {
         }
     }
     //購買頁面
-    
+    .main5{
+        .container{
+            .row{
+                .col-md-8{
+                    .iframes{
+                        height: 80vw !important;
+                        width: 100vw;
+                    }
+                }
+            }
+        }
+    }
     // 聯絡我們
     .main4 {
         .container {
