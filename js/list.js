@@ -29,7 +29,7 @@ $(function () {
             if (listnames == listname) {
                 if (tel == tels) {
                 //    window.location.href="../login.html";
-                   window.location.replace("../login.html");
+                   location.href="./login.html";
                 } else {
                     alert("電話號碼錯誤");
                 }
